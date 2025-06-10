@@ -1,0 +1,28 @@
+{% extends "aplicacion/index.html" %}
+{% block title %} Acerca de nosotros {% endblock %}
+{% block content %}
+{% load static %}
+<section class="about">
+  <h2>Acerca de nosotros
+  </h2>
+  <article>
+    <div class="about-me">
+      <div class="about-me__info">
+        <h3>¿Quiénes somos?</h3>
+        <p>Somos una plataforma que reúne diversos restaurantes especializados en comida peruana.Nuestro objetivo es ayudarte a descubrir y conectar con lugares que ofrecen auténtica gastronomía del Perú, desde los sabores tradicionales hasta propuestas modernas que rinden homenaje a nuestras raíces..</p>
+        <p>Queremos ser el puente entre los amantes de la cocina peruana y los restaurantes que comparten esta pasión, destacando aquellos que utilizan ingredientes frescos, recetas caseras y una atención de calidad. Si buscas una experiencia culinaria peruana genuina, este es el lugar ideal para comenzar tu recorrido.</p>
+        <div class="about-card">
+          <img src="{% static 'aplicacion/assets/signature.png' %}" alt="Firma">
+          <div>
+            <h4>EL BUEN SABOR DE LOS MEJORES</h4>
+            <h5>RESTAURANTES</h5>
+          </div>
+        </div>
+      </div>
+      <div class="about-me__img">
+        <img src="{% static 'aplicacion/assets/somos.jpg' %}" 
+          class="somos-img">
+      </div>
+    </div>
+</section>
+{% endblock %}
